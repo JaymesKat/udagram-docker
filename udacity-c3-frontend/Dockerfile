@@ -9,7 +9,6 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm ci
-RUN npm rebuild node-sass bcryptjs --force
 
 # Bundle app source
 COPY . .
